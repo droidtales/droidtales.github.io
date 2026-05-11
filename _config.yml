@@ -1,0 +1,99 @@
+---
+title: DroidTales
+tagline: Mobile Innovation & Digital Storytelling
+description: >-
+  Exploring the intersection of mobile innovation and digital storytelling. 
+  DroidTales is a dedicated space for deep dives into Android ecosystems, 
+  open-source projects, and automation scripts.
+url: "https://droidtales.github.io"
+
+author:
+  name: DroidTales
+  email: contact@droidtales.github.io
+
+theme: jekyll-theme-chirpy
+lang: en
+
+timezone: UTC
+
+# SEO & Social
+social:
+  name: DroidTales
+  links:
+    - https://github.com/droidtales
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-sitemap
+
+# Pagination
+paginate: 10
+paginate_path: /blog/page:num/
+
+# Collections
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      dynamic_title: true
+      dynamic_last_modified: true
+
+# Exclude
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - '*.gem'
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - package-lock.json
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+
+# Syntax highlighting
+highlight:
+  line_numbers: false
+  input: GFM
+
+# Archives by category & tag
+archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
