@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+header .tagline {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+header nav {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+header nav a:hover {
+  opacity: 0.8;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero .description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.posts h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.post-list {
+  margin-bottom: 2rem;
+}
+
+.post-preview {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.post-preview:hover {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+}
+
+.post-preview h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-preview h3 a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.post-preview h3 a:hover {
+  text-decoration: underline;
+}
+
+.post-preview time {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.post-preview p {
+  color: #666;
+  margin: 1rem 0;
+}
+
+.read-more {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.view-all {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.view-all:hover {
+  background: #764ba2;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.post-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post-date {
+  color: #999;
+}
+
+.categories, .tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.category, .tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #f0f0f0;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.tag {
+  background: #e8e8ff;
+  color: #667eea;
+}
+
+.post-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.post-content h2 {
+  font-size: 1.6rem;
+  margin: 2rem 0 1rem;
+}
+
+.post-content h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.post-content p {
+  margin-bottom: 1rem;
+}
+
+.post-content code {
+  background: #f4f4f4;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+}
+
+.post-content pre {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.post-content ul, .post-content ol {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.post-navigation a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.post-navigation a:hover {
+  text-decoration: underline;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+footer {
+  background: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+  margin-top: 3rem;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 1rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header nav {
+    gap: 1rem;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  .post-title {
+    font-size: 1.5rem;
+  }
+}
